@@ -3,7 +3,7 @@ function toRad(degrees) {
 };    
 
 function calcCrow(lat1, lon1, lat2, lon2) {
-  var R = 6371; // km
+  var R = 637100; // km
   var dLat = toRad(lat2-lat1);
   var dLon = toRad(lon2-lon1);
   var lat1 = toRad(lat1);
@@ -29,7 +29,7 @@ function showPosition(position) {
     // if (distance > 0)
     // alert('Distance: ' + distance);
     var velo = document.getElementById("velo")
-    velo.value = Math.round(distance);
+    velo.value = distance
 }
     
   var positionStr = "Latitude: " + lat2 + " Longitude: " + lon2;
