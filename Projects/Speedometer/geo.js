@@ -29,7 +29,7 @@ function showPosition(position) {
     // if (distance > 0)
     // alert('Distance: ' + distance);
     var velo = document.getElementById("velo")
-    velo.value = Math.round(distance);
+    velo.value = distance
 }
     
   var positionStr = "Latitude: " + lat2 + " Longitude: " + lon2;
