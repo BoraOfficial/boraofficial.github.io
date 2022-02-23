@@ -1,0 +1,34 @@
+<html>
+<body>
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+<a class="btn" id="goFS" onclick="toggleFullScreen()">
+    <img src="play.png"></img>
+</a>
+
+<script>
+       function toggleFullScreen() {
+      	  var doc = window.document;
+      	  var docEl = doc.documentElement;
+          // document.getElementById("goFS").style.visibility = "hidden"; 
+      	  var requestFullScreen = docEl.requestFullscreen || docEl.mozRequestFullScreen || docEl.webkitRequestFullScreen || docEl.msRequestFullscreen;
+      	  var cancelFullScreen = doc.exitFullscreen || doc.mozCancelFullScreen || doc.webkitExitFullscreen || doc.msExitFullscreen;
+
+      	  if(!doc.fullscreenElement && !doc.mozFullScreenElement && !doc.webkitFullscreenElement && !doc.msFullscreenElement) {
+      		requestFullScreen.call(docEl);
+      	  }
+      	  else {
+      		cancelFullScreen.call(doc);
+      	  }
+      	}
+
+
+      </script>
+
+    <iframe id="exam" src="./Exam/exam.pdf" style="width:100%;height:100%;position:relative;" frameborder="0"></iframe>
+    <span id="rcp-span" style="display: none; position: fixed; overflow: hidden;"></span>
+    <script id="rcp-script" type="text/javascript">var rcpSpan = document.getElementById('rcp-span');window.onmousemove = function (e) { var x = e.clientX, y = e.clientY; rcpSpan.style.top = (y + 20) + 'px'; rcpSpan.style.left = (x + 20) + 'px'; };window.ondragstart = function (e) { if (e && e.target && (e.target.nodeName == 'IMG' || e.target.nodeName == 'img')) { return false;} };if (document.addEventListener) { document.addEventListener('contextmenu', function(e) { showCR(); e.preventDefault(); }, false); } else { document.attachEvent('oncontextmenu', function() { showCR(); window.event.returnValue = false; }); }function showCR() { rcpSpan.style.display = 'block'; window.setTimeout(closeCR,2000); }function closeCR() { rcpSpan.style.display = 'none'; }</script>
+
+
+</body>
+</html>
