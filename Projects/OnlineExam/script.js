@@ -29,15 +29,3 @@ document.onkeydown = function(e) {
   }
 }
 
-// Make the iFrame fullscreen
-
-var elem = document.getElementById("exam");
-function openFullscreen() {
-  if (elem.requestFullscreen) {
-    elem.requestFullscreen();
-  } else if (elem.webkitRequestFullscreen) { /* Safari */
-    elem.webkitRequestFullscreen();
-  } else if (elem.msRequestFullscreen) { /* IE11 */
-    elem.msRequestFullscreen();
-  }
-}
