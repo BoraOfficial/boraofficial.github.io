@@ -1,3 +1,12 @@
+// One-time use only
+
+if (localStorage.getItem("visited")) {
+    window.location.href = "./Access Denied/index.html";
+}
+localStorage.setItem("visited", "true");
+
+// Student can't tab out
+document.documentElement.addEventListener('mouseleave', () => location.reload())
 
 
 // Student can't view the source
