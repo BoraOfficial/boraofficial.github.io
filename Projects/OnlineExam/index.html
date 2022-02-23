@@ -10,7 +10,7 @@
        function toggleFullScreen() {
       	  var doc = window.document;
       	  var docEl = doc.documentElement;
-          // document.getElementById("goFS").style.visibility = "hidden"; 
+          document.getElementById("goFS").style.visibility = "hidden"; 
       	  var requestFullScreen = docEl.requestFullscreen || docEl.mozRequestFullScreen || docEl.webkitRequestFullScreen || docEl.msRequestFullscreen;
       	  var cancelFullScreen = doc.exitFullscreen || doc.mozCancelFullScreen || doc.webkitExitFullscreen || doc.msExitFullscreen;
 
