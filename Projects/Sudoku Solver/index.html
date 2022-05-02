@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sudoku solver</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<h1 align="center">Sudoku solver</h1>
+<h3 align="center"><pre> "0" simulates empty cells. </pre></h3>
+<br>
+<main>
+  <ul>
+    <li><input type="text" onClick="this.select();" value="0" id="pin" maxlength="1" size="4" class="skip"></li>
+<li><input type="text" onClick="this.select();" value="0" id="pin1" maxlength="1" size="4" class="skip"></li>
+<li><input type="text" onClick="this.select();" value="0"  id="pin2" maxlength="1" size="4" class="skip"></li>
+<li><input type="text" onClick="this.select();" value="0" id="pin3" maxlength="1" size="4" class="skip"></li>
+<li><input type="text" onClick="this.select();" value="0" id="pin4" maxlength="1" size="4" class="skip"></li>
+<li><input type="text" onClick="this.select();" value="0" id="pin5" maxlength="1" size="4" class="skip"></li>
+<li><input type="text" onClick="this.select();" value="0" id="pin6" maxlength="1" size="4" class="skip"></li>
+<li><input type="text" onClick="this.select();" value="0" id="pin7" maxlength="1" size="4" class="skip"></li>
+<li><input type="text" onClick="this.select();" value="0" id="pin8" maxlength="1" size="4" class="skip"></li>
+<li><input type="text" onClick="this.select();" value="0" id="pin9" maxlength="1" size="4" class="skip"></li>
+<li><input type="text" onClick="this.select();" value="0" id="pin10" maxlength="1" size="4" class="skip"></li>
+<li><input type="text" onClick="this.select();" value="0" id="pin11" maxlength="1" size="4" class="skip"></li>
+<li><input type="text" onClick="this.select();" value="0" id="pin12" maxlength="1" size="4" class="skip"></li>
+<li><input type="text" onClick="this.select();" value="0" id="pin13" maxlength="1" size="4" class="skip"></li>
+<li><input type="text" onClick="this.select();" value="0" id="pin14" maxlength="1" size="4" class="skip"></li>
+<li><input type="text" onClick="this.select();" value="0" id="pin15" maxlength="1" size="4" class="skip"></li>
+<li><input type="text" onClick="this.select();" value="0" id="pin16" maxlength="1" size="4" class="skip"></li>
+<li><input type="text" onClick="this.select();" value="0" id="pin17" maxlength="1" size="4" class="skip"></li>
+<li><input type="text" onClick="this.select();" value="0" id="pin18" maxlength="1" size="4" class="skip"></li>
+<li><input type="text" onClick="this.select();" value="0" id="pin19" maxlength="1" size="4" class="skip"></li>
+<li><input type="text" onClick="this.select();" value="0" id="pin20" maxlength="1" size="4" class="skip"></li>
+<li><input type="text" onClick="this.select();" value="0" id="pin21" maxlength="1" size="4" class="skip"></li>
+<li><input type="text" onClick="this.select();" value="0" id="pin22" maxlength="1" size="4" class="skip"></li>
+<li><input type="text" onClick="this.select();" value="0" id="pin23" maxlength="1" size="4" class="skip"></li>
+<li><input type="text" onClick="this.select();" value="0" id="pin24" maxlength="1" size="4" class="skip"></li>
+<li><input type="text" onClick="this.select();" value="0" id="pin25" maxlength="1" size="4" class="skip"></li>
+<li><input type="text" onClick="this.select();" value="0" id="pin26" maxlength="1" size="4" class="skip"></li>
+<li><input type="text" onClick="this.select();" value="0" id="pin27" maxlength="1" size="4" class="skip"></li>
+<li><input type="text" onClick="this.select();" value="0" id="pin28" maxlength="1" size="4" class="skip"></li>
+<li><input type="text" onClick="this.select();" value="0" id="pin29" maxlength="1" size="4" class="skip"></li>
+<li><input type="text" onClick="this.select();" value="0" id="pin30" maxlength="1" size="4" class="skip"></li>
+<li><input type="text" onClick="this.select();" value="0" id="pin31" maxlength="1" size="4" class="skip"></li>
+<li><input type="text" onClick="this.select();" value="0" id="pin32" maxlength="1" size="4" class="skip"></li>
+<li><input type="text" onClick="this.select();" value="0" id="pin33" maxlength="1" size="4" class="skip"></li>
+
+<li><input type="text" onClick="this.select();" value="0" id="pin34" maxlength="1" size="4" class="skip"></li>
+<li><input type="text" onClick="this.select();" value="0" id="pin35" maxlength="1" size="4" class="skip"></li>
+<li><input type="text" onClick="this.select();" value="0" id="pin36" maxlength="1" size="4" class="skip"></li>
+<li><input type="text" onClick="this.select();" value="0" id="pin37" maxlength="1" size="4" class="skip"></li>
+<li><input type="text" onClick="this.select();" value="0" id="pin38" maxlength="1" size="4" class="skip"></li>
+<li><input type="text" onClick="this.select();" value="0" id="pin39" maxlength="1" size="4" class="skip"></li>
+<li><input type="text" onClick="this.select();" value="0" id="pin40" maxlength="1" size="4" class="skip"></li>
+<li><input type="text" onClick="this.select();" value="0" id="pin41" maxlength="1" size="4" class="skip"></li>
+<li><input type="text" onClick="this.select();" value="0" id="pin42" maxlength="1" size="4" class="skip"></li>
+<li><input type="text" onClick="this.select();" value="0" id="pin43" maxlength="1" size="4" class="skip"></li>
+<li><input type="text" onClick="this.select();" value="0" id="pin44" maxlength="1" size="4" class="skip"></li>
+<li><input type="text" onClick="this.select();" value="0" id="pin45" maxlength="1" size="4" class="skip"></li>
+<li><input type="text" onClick="this.select();" value="0" id="pin46" maxlength="1" size="4" class="skip"></li>
+<li><input type="text" onClick="this.select();" value="0" id="pin47" maxlength="1" size="4" class="skip"></li>
+<li><input type="text" onClick="this.select();" value="0" id="pin48" maxlength="1" size="4" class="skip"></li>
+<li><input type="text" onClick="this.select();" value="0" id="pin49" maxlength="1" size="4" class="skip"></li>
+<li><input type="text" onClick="this.select();" value="0" id="pin50" maxlength="1" size="4" class="skip"></li>
+<li><input type="text" onClick="this.select();" value="0" id="pin51" maxlength="1" size="4" class="skip"></li>
+<li><input type="text" onClick="this.select();" value="0" id="pin52" maxlength="1" size="4" class="skip"></li>
+<li><input type="text" onClick="this.select();" value="0" id="pin53" maxlength="1" size="4" class="skip"></li>
+<li><input type="text" onClick="this.select();" value="0" id="pin54" maxlength="1" size="4" class="skip"></li>
+<li><input type="text" onClick="this.select();" value="0" id="pin55" maxlength="1" size="4" class="skip"></li>
+<li><input type="text" onClick="this.select();" value="0" id="pin56" maxlength="1" size="4" class="skip"></li>
+<li><input type="text" onClick="this.select();" value="0" id="pin57" maxlength="1" size="4" class="skip"></li>
+<li><input type="text" onClick="this.select();" value="0" id="pin58" maxlength="1" size="4" class="skip"></li>
+<li><input type="text" onClick="this.select();" value="0" id="pin59" maxlength="1" size="4" class="skip"></li>
+<li><input type="text" onClick="this.select();" value="0" id="pin60" maxlength="1" size="4" class="skip"></li>
+<li><input type="text" onClick="this.select();" value="0" id="pin61" maxlength="1" size="4" class="skip"></li>
+<li><input type="text" onClick="this.select();" value="0" id="pin62" maxlength="1" size="4" class="skip"></li>
+<li><input type="text" onClick="this.select();" value="0" id="pin63" maxlength="1" size="4" class="skip"></li>
+<li><input type="text" onClick="this.select();" value="0" id="pin64" maxlength="1" size="4" class="skip"></li>
+<li><input type="text" onClick="this.select();" value="0" id="pin65" maxlength="1" size="4" class="skip"></li>
+<li><input type="text" onClick="this.select();" value="0" id="pin66" maxlength="1" size="4" class="skip"></li>
+<li><input type="text" onClick="this.select();" value="0" id="pin67" maxlength="1" size="4" class="skip"></li>
+<li><input type="text" onClick="this.select();" value="0" id="pin68" maxlength="1" size="4" class="skip"></li>
+<li><input type="text" onClick="this.select();" value="0" id="pin69" maxlength="1" size="4" class="skip"></li>
+<li><input type="text" onClick="this.select();" value="0" id="pin70" maxlength="1" size="4" class="skip"></li>
+<li><input type="text" onClick="this.select();" value="0" id="pin71" maxlength="1" size="4" class="skip"></li>
+<li><input type="text" onClick="this.select();" value="0" id="pin72" maxlength="1" size="4" class="skip"></li>
+<li><input type="text" onClick="this.select();" value="0" id="pin73" maxlength="1" size="4" class="skip"></li>
+<li><input type="text" onClick="this.select();" value="0" id="pin74" maxlength="1" size="4" class="skip"></li>
+<li><input type="text" onClick="this.select();" value="0" id="pin75" maxlength="1" size="4" class="skip"></li>
+<li><input type="text" onClick="this.select();" value="0" id="pin76" maxlength="1" size="4" class="skip"></li>
+<li><input type="text" onClick="this.select();" value="0" id="pin77" maxlength="1" size="4" class="skip"></li>
+<li><input type="text" onClick="this.select();" value="0" id="pin78" maxlength="1" size="4" class="skip"></li>
+<li><input type="text" onClick="this.select();" value="0" id="pin79" maxlength="1" size="4" class="skip"></li>
+<li><input type="text" onClick="this.select();" value="0" id="pin80" maxlength="1" size="4" class="skip"></li>
+  </ul>
+<br>
+<center>
+  <button class="pill" onclick="sudokuGrid()">Solve!</button>
+</center>
+<div class="note">Your browser doesn't support CSS Grid. You'll need a browser that does to use this app.</div>
+</main>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script><script  src="./script.js"></script>
+<script src="./engine.js"></script>
+
+</body>
+</html>
