@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Minecraft</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://htmlprofessi0nal.github.io/minecraft.css" />
+	<link rel="shortcut icon" href="https://cdn.freebiesupply.com/logos/large/2x/minecraft-1-logo-png-transparent.png"
+	 type="image/x-icon" />
+	<link rel="icon" href="https://cdn.freebiesupply.com/logos/large/2x/minecraft-1-logo-png-transparent.png"
+	 type="image/x-icon" />
+</head>
+
+		</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="https://htmlprofessi0nal.github.io/style.css">
+		<img alt="Minecraft" id="logo" src="https://www.linkpicture.com/q/minecraft.svg"/>
+<div id="flashingtext" style="font-family: 'VT323', serif; font-style: normal; font-weight: normal;">Bees! bees! bees!</div>
+<main>
+<button style="font-family: 'VT323', serif; font-style: normal; font-weight: normal;" class="button" onclick="play()">Singleplayer</button>
+<br>
+<button style="font-family: 'VT323', serif; font-style: normal; font-weight: normal;" class="button" onclick="playmulti()" id="playmulti"><p style="font-family: 'VT323', serif; font-style: normal; font-weight: normal;">Multiplayer</p></button> <br>
+<button style="font-family: 'VT323', serif; font-style: normal; font-weight: normal;" class="button" onclick="alert('Thanks to classic.minecraft.net for the game part')">Credits</button>
+<button style="font-family: 'VT323', serif; font-style: normal; font-weight: normal;" class="button" onclick="alert('WASD to move G to spawn bots B for more blocks 1-9 to switch between blocks on your current slot')">How to play</button>
+
+<button style="font-family: 'VT323', serif; font-style: normal; font-weight: normal;" class="button button_small left" onclick="change()">Options</button>
+<button style="font-family: 'VT323', serif; font-style: normal; font-weight: normal;" class="button button_small right" onclick="quit();">Quit Game</button>
+<script src="https://htmlprofessi0nal.github.io/minecraft.js"></script>
+<script type="text/javascript">
+
+}
+var button = document.getElementById("button");
+var audio = document.getElementById("audio");
+button.addEventListener("click", function(){
+  if(audio.paused){
+    audio.play();
+    button.innerHTML = "Pause audio";
+  } else {
+    audio.pause();
+    button.innerHTML = "Play audio";
+}
+});
+</script>
+<style>
+html {
+	height: 100%;
+	overflow: hidden;
+}
+body {
+	background: #303030 url("minecraft.jpg") repeat-x 0 0;
+	background-size: cover;
+	animation: MinecraftBackground 165s linear infinite;
+	text-align: center;
+	text-shadow: 0.2vw 0.2vw 0 #383838;
+	min-height: 100%;
+}
+main {
+	padding: 8% 30% 0 30%;
+}
+img, main, div {
+	image-rendering: pixelated;
+}
+a {
+	color: #fff;
+	text-decoration: none;
+}
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	font-size: 1.2vw;
+	color: white;
+	margin-bottom: 0.4vw;
+}
+#logo {
+	margin-top: 5%;
+	width: 50%;
+}
+/* TODO: Make the flashing text scale down as more text is added */
+#flashingtext {
+	margin: -3.5% 0 0 47%;
+	width: 40%;
+	transform: rotate(-20deg);
+	animation: FlashingText 0.5s ease-in-out infinite;
+	color: #FFFF00;
+	font-size: 2vw;
+}
+.button {
+	/* padding: 0.2% 50vw; */
+	padding: 1% 0 3% 0;
+	margin: 0 auto 2% auto;
+	background: #7D7D7D url("buttons.png") no-repeat center;
+	background-size: 100% 300%;
+	color: #E0E0E0;
+	font-size: 1.2vw;
+        font-family: 'Minecraft', sans-serif; 
+	outline: 0.2vw solid #000;
+	outline-offset: -0.2vw;
+}
+.button_small {
+	width: 49%;
+	display: inline-block;
+	margin-top: 5%;
+}
+.button:hover {
+	background: #7079AA url("buttons.png") no-repeat bottom;
+	background-size: 100% 300%;
+	color: #FFFFA0;
+}
+.button:disabled, .button[disabled] {
+	background: #272727 url("buttons.png") no-repeat top;
+	background-size: 100% 300%;
+	color: #A9A9A9;
+}
+.button span {
+	vertical-align: middle;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+.bold {
+	font-weight: bold;
+}
+footer .right {
+	margin-right: 10px;
+}
+ @keyframes FlashingText {
+ 0% {
+ transform: scale(1) rotate(-20deg);
+}
+ 50% {
+ transform: scale(1.05) rotate(-20deg);
+}
+ 100% {
+ transform: scale(1) rotate(-20deg);
+}
+}
+ @keyframes MinecraftBackground {
+ 0% {
+background-position: 0 0;
+}
+ 100% {
+background-position: -4096px 0;
+}
+}
+button {
+	font-family: 'Minecraft', sans-serif; 
+}
+</style>
+</main>
+</body>
+</html>
