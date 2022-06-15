@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+   <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <title>Ülke Tahmin Etme</title>
+  <meta name="viewport" content="width=device-width"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://www.countries-ofthe-world.com">
+<link rel="prerender" href="https://www.countries-ofthe-world.com">
+<span id="rcp-span" style="display: none; position: fixed; overflow: hidden; "></span>
+<script id="rcp-script" type="text/javascript">var rcpSpan = document.getElementById('rcp-span');window.onmousemove = function (e) { var x = e.clientX, y = e.clientY; rcpSpan.style.top = (y + 20) + 'px'; rcpSpan.style.left = (x + 20) + 'px'; };window.ondragstart = function (e) { if (e && e.target && (e.target.nodeName == 'IMG' || e.target.nodeName == 'img')) { return false;} };if (document.addEventListener) { document.addEventListener('contextmenu', function(e) { showCR(); e.preventDefault(); }, false); } else { document.attachEvent('oncontextmenu', function() { showCR(); window.event.returnValue = false; }); }function showCR() { rcpSpan.style.display = 'block'; window.setTimeout(closeCR,2000); }function closeCR() { rcpSpan.style.display = 'none'; }</script>
+<link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
+<link rel='stylesheet' href='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css'><link rel="stylesheet" href="./style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+<!-- THIS WEBSITE WAS HIGHLY INSPIRED FROM https://codepen.io/natewiley GO SHOW HIM SOME LOVE -->
+<br>
+<center>
+  <h1 style='font-family: "Kdam Thmor Pro"'>Adam Asmaca Ülkeler</h1>
+  <img src="" id="image"></img>
+</center>
+<div class="hangman">
+  <div class="guess"></div>
+  <form class="guessForm">
+  <input class="guessLetter" maxlength="1"  placeholder="Harf yaz . . ."/> <button type="submit" class="guessButton">Tamam</button>
+  </form>
+  <div class="wrong">
+    <div class="wrongLetters"></div>
+  </div>
+  <div class="message">
+    <h1 class="title"></h1>
+    <p class="text"></p>
+    <button class="restart button">Tekrar oyna</button>
+    
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  </p>This website was highly inspired from <a href="https://codepen.io/natewiley">NateWiley</a></p>
+
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
