@@ -1,5 +1,5 @@
 setInterval(function(){
-  var velo = document.getElementById("velo")
+  var velo = document.getElementById("velo");
 
   function getlocation() {
     navigator.geolocation.getCurrentPosition(showLoc);
