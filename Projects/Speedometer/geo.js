@@ -6,7 +6,6 @@ setInterval(function(){
   }
 
   function showLoc(pos) {
-    velo.value = "Speed: " +
-      pos.coords.speed;
+    velo.value = pos.coords.speed;
   }
 }, 1000);
