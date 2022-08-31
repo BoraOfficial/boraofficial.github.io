@@ -1,3 +1,20 @@
+function saveText() {
+
+    document.cookie = "name="+document.getElementById("file").value+"; expires=Thu, 18 Dec 3000 12:00:00 UTC";
+    document.cookie = "text="+document.getElementById("page").value+"; expires=Thu, 18 Dec 3000 12:00:00 UTC";
+    alert("Successfully saved!")
+
+
+}
+
+function loadText() {
+    if($.cookie("text") !== undefined) {
+        console.log("Data found. Loading it in...")
+        document.getElementById("page").value = $.cookie("text")
+        document.getElementById("file").value = $.cookie("name")
+    }
+
+}
 function downloadFile(filename, content) {
  
   const element = document.createElement('a');
@@ -22,6 +39,7 @@ function downloadFile(filename, content) {
 };
 
 window.onload = () => {
+  loadText()
   document.getElementById('export').
   addEventListener('click', e => {
     
@@ -41,27 +59,3 @@ window.onload = () => {
     }
   });
 };
-
-function saveText() {
-
-    document.cookie = "name="+document.getElementById("file").value+"; expires=Thu, 18 Dec 3000 12:00:00 UTC";
-    document.cookie = "text="+document.getElementById("page").value+"; expires=Thu, 18 Dec 3000 12:00:00 UTC";
-    alert("Successfully saved!")
-
-
-}
-
-function loadText() {
-    if($.cookie("text") !== undefined) {
-        console.log("Data found. Loading it in...")
-        document.getElementById("page").value = $.cookie("text")
-        document.getElementById("file").value = $.cookie("name")
-    }
-
-}
-
-window.onload = (event) => {
-  loadText();
-};
-
-
