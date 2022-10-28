@@ -8,6 +8,8 @@ body {
   background-color: var(--back-color);
   text-align: center;
   justify-content: center;
+  touch-action: manipulation;
+  overflow: hidden;
 }
 
 .btn:focus {
