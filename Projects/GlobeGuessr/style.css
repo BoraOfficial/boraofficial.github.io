@@ -1,0 +1,65 @@
+
+
+.zoomloose {
+    
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-size:cover;
+    background-position:center-top;
+    background-position-x: 50%;
+    background-position-y: 0%;
+    -webkit-animation: zoomin 5s 1;
+}
+
+@-webkit-keyframes zoomin {
+    0% {
+        -webkit-transform: scale(1);
+    }
+    100% {
+        -webkit-transform: scale(2);
+    }
+}
+
+.lost{
+	opacity: 0.4;
+	width: 100%;
+	height: 100%;
+	z-index: 99999;
+	position: absolute;
+	top: 0;
+}
+
+.fader {
+   opacity:0;
+   -webkit-transition: opacity 2s;
+   -moz-transition: opacity 2s;
+   -o-transition: opacity 2s;
+   transition: opacity 2s;
+   visibility: visible;
+}
+
+.btn-pill {
+  background-color: #ddd;
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+}
+
+.btn-pill:hover {
+  background-color: #f1f1f1;
+}
+
+.won{
+	opacity: 0.4;
+	width: 100%;
+	height: 100%;
+	z-index: 99999;
+	position: absolute;
+	top: 0;
+}
