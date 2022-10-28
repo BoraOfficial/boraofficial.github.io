@@ -2,7 +2,7 @@
 <html lang="en" >
 <head>
    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-  <title>Ülke Tahmin Etme</title>
+  <title>Hangman Guess</title>
   <meta name="viewport" content="width=device-width"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,16 +16,16 @@
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
 <body>
-<!-- THIS WEBSITE WAS HIGHLY INSPIRED FROM https://codepen.io/natewiley GO SHOW HIM SOME LOVE -->
+
 <br>
 <center>
-  <h1 style='font-family: "Kdam Thmor Pro"'>Adam Asmaca Ülkeler</h1>
+  <h1 style='font-family: "Kdam Thmor Pro"'>Guess the country</h1>
   <img src="" id="image"></img>
 </center>
 <div class="hangman">
   <div class="guess"></div>
   <form class="guessForm">
-  <input class="guessLetter" maxlength="1"  placeholder="Harf yaz . . ."/> <button type="submit" class="guessButton">Tamam</button>
+  <input class="guessLetter" maxlength="1"  placeholder="Write a letter . . ."/> <button type="submit" class="guessButton">Guess</button>
   </form>
   <div class="wrong">
     <div class="wrongLetters"></div>
@@ -33,7 +33,7 @@
   <div class="message">
     <h1 class="title"></h1>
     <p class="text"></p>
-    <button class="restart button">Tekrar oyna</button>
+    <button class="restart button">Play again</button>
     
   </div>
   <br>
@@ -60,7 +60,7 @@
   <br>
   <br>
   <br>
-  </p>This website was highly inspired from <a href="https://codepen.io/natewiley">NateWiley</a></p>
+  </p>This website was highly inspired by <a href="https://codepen.io/natewiley">NateWiley</a></p>
 
 </div>
 <!-- partial -->
