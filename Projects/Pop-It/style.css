@@ -9,7 +9,7 @@ body {
   text-align: center;
   justify-content: center;
   touch-action: manipulation;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .btn:focus {
