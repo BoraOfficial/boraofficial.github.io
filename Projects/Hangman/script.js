@@ -170,7 +170,7 @@ function slugify(text) {
     showWrong: function(wrongGuesses){
       if(wrongGuesses){
         var frag = "<ul class='wrongLetters'>";
-        frag += "<p>Olmayan harfler: </p>";
+        frag += "<p>Wrong letters: </p>";
         $.each(wrongGuesses, function(key, val){
           frag += "<li>" + val + "</li>";
         });
