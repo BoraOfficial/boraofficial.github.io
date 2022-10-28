@@ -4,6 +4,26 @@
 <head>
   <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <title>Online Pop-It!</title>
+  <script src="https://raw.githubusercontent.com/arscan/pleaserotate.js/master/pleaserotate.js"></script>
+  <style>
+    /* style the elements with CSS */
+    #pleaserotate-graphic{
+        fill: #fff;
+    }
+
+    #pleaserotate-backdrop {
+        color: #fff;
+        background-color: #000;
+    }
+  </style>
+
+  <script>
+    /* you can pass in options here */
+    PleaseRotateOptions = {
+        forcePortrait: true // if you would prefer to force portrait mode
+    };
+  </script>
+
   <link rel="preload" href="https://boraofficial.github.io/Projects/Pop-It/pop.mp3">
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css"><link rel="stylesheet" href="./button.css">
 
