@@ -282,7 +282,7 @@ function slugify(text) {
       var rating = this.rating();
       this.msgTitle.html("İnanılamaz! Kazandın.");
       // this is messy
-      this.msgText.html("Kelimeyi <span class='highlight'>" + rating.guesses + "</span> denemede buldun!<br>Skor: <span class='highlight'>" + rating.rating + "%</span>");
+      this.msgText.html("You found the country after <span class='highlight'>" + rating.guesses + "</span> trys!<br>Skor: <span class='highlight'>" + rating.rating + "%</span>");
       this.showMsg();
       this.playSound("winSound");
 
@@ -290,8 +290,8 @@ function slugify(text) {
 
 
     lose: function(){
-      this.msgTitle.html("Kaybettin.. Kelime <span class='highlight'>"+ this.wrd.word +"'ydi</span>");
-      this.msgText.html("Tekrar denemek ister misin?");
+      this.msgTitle.html("You lost... The country was <span class='highlight'>"+ this.wrd.word +"</span>");
+      this.msgText.html("Try again?");
       this.showMsg();
       this.playSound("loseSound");
     }
@@ -303,6 +303,6 @@ function slugify(text) {
 
   var ENwordList = ["Afghanistan","Albania","Algeria","Andorra","Angola","Argentina","Armenia","Australia","Austria","Azerbaijan","Bahamas" , "Bahrain","Bangladesh","Barbados","Belarus","Belgium","Belize","Benin","Bhutan","Bolivia","Bosnia-Herzegovina","Botswana","Brazil", "Brunei","Bulgaria","Burkina Faso","Burundi","Cambodia","Cameroon","Canada","Cape Verde","Central African Republic","Chad","Chile","China" , "Colombia","Comoros","Congo","Costa Rica","Croatia","Cuba","Czech Republic","Denmark","Djibouti","Dominica","Dominican Republic","Ecuador","Egypt","El Salvador","Equatorial Guinea","Eritrea","Estonia","Ethiopia","Fiji","Finland","France","Gabon","Gambia","Georgia","Germany","Ghana","Greece","Grenada","Guatemala","Guinea","Guinea-Bissau","Guyana","Haiti","Honduras","Hungary","Iceland","India","Indonesia","Iran","Iraq","Ireland","Israel","Italy","Ivory Coast","Jamaica","Japan" ,"Jordan","Kazakhstan","Kenya","Kiribati","Korea North","Korea South", "Kosovo","Kuwait","Kyrgystan","Laos","Latvia","Lesotho","Liberia","Libya","Liechtenstein","Lithuania","Luxembourg","Madagascar","Malawi","Malaysia" ,"Maldives","Mali","Malta","Marshall Islands","Mauritania","Mauritius","Mexico","Micronesia","Moldova" ,"Monaco","Mongolia","Montenegro","Morocco","Mozambique","Myanmar","Namibia","Nauru","Nepal","Netherlands","New Zealand","Nicaragua", "Niger","Nigeria","Norway","Oman","Pakistan","Palau","Panama","Papua New Guinea","Paraguay","Peru","Philippines","Poland", "Portugal","Qatar","Romania","Russia","Rwanda","St Kitts & Nevis","St Lucia","Saint Vincent and the Grenadines","Samoa","San Marino","Sao Tome and Principe","Saudi Arabia","Senegal","Serbia","Seychelles","Sierra Leone","Singapore","Slovakia","Slovenia","Solomon Islands","Somalia","South Africa","South Sudan","Spain" ,"Sri Lanka","Sudan","Suriname","Swaziland","Sweden","Switzerland","Syria","Taiwan","Tajikistan", "Tanzania","Thailand","Togo","Tonga","Trinidad & Tobago", "Tunisia","Turkey","Turkmenistan","Tuvalu","Uganda","Ukraine","United Arab Emirates","United Kingdom","United States of America","Uruguay","Uzbekistan","Vanuatu","Vatican City","Venezuela","Vietnam","Yemen","Zambia","Zimbabwe"];
 
-  Hangman.init(wordList);
+  Hangman.init(ENwordList);
 
 })(jQuery, window);
