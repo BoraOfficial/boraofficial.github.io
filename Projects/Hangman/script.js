@@ -282,7 +282,7 @@ function slugify(text) {
       var rating = this.rating();
       this.msgTitle.html("İnanılamaz! Kazandın.");
       // this is messy
-      this.msgText.html("You found the country after <span class='highlight'>" + rating.guesses + "</span> trys!<br>Skor: <span class='highlight'>" + rating.rating + "%</span>");
+      this.msgText.html("You found the country after <span class='highlight'>" + rating.guesses + "</span> trys!<br>Score: <span class='highlight'>" + rating.rating + "%</span>");
       this.showMsg();
       this.playSound("winSound");
 
@@ -291,7 +291,7 @@ function slugify(text) {
 
     lose: function(){
       this.msgTitle.html("You lost... The country was <span class='highlight'>"+ this.wrd.word +"</span>");
-      this.msgText.html("Try again?");
+      this.msgText.html("Don't worry, you'll get it next time!");
       this.showMsg();
       this.playSound("loseSound");
     }
