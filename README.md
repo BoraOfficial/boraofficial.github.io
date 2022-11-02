@@ -5,7 +5,9 @@ This is the website I host all my projects on. Thanks for coming!
 ---
 # The list of hosted Projects:
 
+<ul>
 <li><a href="https://boraofficial.github.io/Projects/Private%20Notes/index.html#navbar">Private Notes</a></li>
+</ul>
 
 ---
 <b>Credits for some 3D models:</b>
