@@ -1,0 +1,14 @@
+body { touch-action: manipulation; overflow-x: hidden;}
+
+.run-code{
+	position: fixed;
+	z-index: 9999;
+	border-radius: 40px;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	border: none;
+	background-color: rgba(11, 29, 54, 0.86);
+	right: 5;
+	bottom: 5;
+}
