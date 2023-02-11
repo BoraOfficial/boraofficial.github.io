@@ -1,0 +1,508 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Helvetica Now', sans-serif;
+
+    overflow: hidden;
+
+}
+
+.header-1 {
+    font-family: 'Helvetica Now', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.img-style {
+    border-radius: 10px;
+    width: 35vw;
+    height: 35vw;
+    right: 10vw;
+    position: absolute;
+    z-index: 50;
+    top: 15vh;
+}
+
+.greet {
+    top: 29.5vh;
+    position: relative;
+    left: 11vw;
+}
+
+.paragraph-1 {
+    font-family: 'Helvetica Now', sans-serif;
+    color: #666;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+    letter-spacing: 0.14px;
+    top: 29.5vh;
+    position: relative;
+    left: 11vw;
+    
+}
+
+
+.section-1{
+    height: 100vh;
+    width: 100vw;
+}
+
+
+
+.animatable {
+  
+    /* initially hide animatable objects */
+    visibility: hidden;
+    
+    /* initially pause animatable objects their animations */
+    -webkit-animation-play-state: paused;   
+    -moz-animation-play-state: paused;     
+    -ms-animation-play-state: paused;
+    -o-animation-play-state: paused;   
+    animation-play-state: paused; 
+  }
+  
+  /* show objects being animated */
+  .animated {
+    visibility: visible;
+    
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -ms-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    animation-fill-mode: both;
+    
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -ms-animation-duration: 1s;
+    -o-animation-duration: 1s;
+    animation-duration: 1s;
+  
+    -webkit-animation-play-state: running;
+    -moz-animation-play-state: running;
+    -ms-animation-play-state: running;
+    -o-animation-play-state: running;
+    animation-play-state: running;
+  }
+  
+  /* CSS Animations (extracted from http://glifo.uiparade.com/) */
+  
+  @-webkit-keyframes fadeInUp {
+      0% {
+          opacity: 0;
+          -webkit-transform: translateY(20px);
+      }	100% {
+          opacity: 1;
+          -webkit-transform: translateY(0);
+      }
+  }
+  
+  @-moz-keyframes fadeInUp {
+      0% {
+          opacity: 0;
+          -moz-transform: translateY(20px);
+      }
+  
+      100% {
+          opacity: 1;
+          -moz-transform: translateY(0);
+      }
+  }
+  
+  @-o-keyframes fadeInUp {
+      0% {
+          opacity: 0;
+          -o-transform: translateY(20px);
+      }
+  
+      100% {
+          opacity: 1;
+          -o-transform: translateY(0);
+      }
+  }
+  
+  @keyframes fadeInUp {
+      0% {
+          opacity: 0;
+          transform: translateY(20px);
+      }
+  
+      100% {
+          opacity: 1;
+          transform: translateY(0);
+      }
+  }
+  
+  
+  
+  .animated.animationDelay{
+      animation-delay:.8s;
+      -webkit-animation-delay:.8s;
+  }
+  .animated.animationDelayMed{
+      animation-delay:1.2s;
+      -webkit-animation-delay:1.2s;
+  }
+  .animated.animationDelayLong{
+      animation-delay:1.6s;
+      -webkit-animation-delay:1.6s;
+  }
+  
+  .animated.fadeInUp {
+      -webkit-animation-name: fadeInUp;
+      -moz-animation-name: fadeInUp;
+      -o-animation-name: fadeInUp;
+      animation-name: fadeInUp;
+  }
+
+/* ANIMATIONS END */
+
+
+.navbar {
+
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #f1f1f185;
+    top: 0px;
+    position: fixed;
+    width: 100vw;
+    left: 0;
+    z-index: 9999;
+
+}
+
+
+.clickables {
+    cursor: pointer;
+    color: #4a4a4a;
+}
+
+.header-2 {
+    font-size: 7.5vw;
+    background: linear-gradient(36deg, #12C2E9 0%, #c471ed 25%, #f64f59 40%);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+
+.gradient-1 {
+        background: linear-gradient(270deg, #bff098, #6fd6ff);
+        background-size: 400% 400%;
+    
+        -webkit-animation: AnimationName 13s ease infinite;
+        -moz-animation: AnimationName 13s ease infinite;
+        animation: AnimationName 13s ease infinite;
+    }
+
+@-webkit-keyframes AnimationName {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@-moz-keyframes AnimationName {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@keyframes AnimationName {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+
+.gradient-2 {
+    background: linear-gradient(270deg, #de8efc, #00c2ff);
+    background-size: 600% 600%;
+
+    -webkit-animation: AnimationName 7s ease infinite;
+    -moz-animation: AnimationName 7s ease infinite;
+    animation: AnimationName 7s ease infinite;
+}
+
+.gradient-3 {
+    background: linear-gradient(270deg, #ff5f6d, #ffc371);
+    background-size: 400% 400%;
+
+    -webkit-animation: AnimationName 5s ease infinite;
+    -moz-animation: AnimationName 5s ease infinite;
+    animation: AnimationName 5s ease infinite;
+}
+
+
+.gradient-4 {
+        background: linear-gradient(270deg, #93a5cf, #e4efe9);
+        background-size: 400% 400%;
+    
+        -webkit-animation: AnimationName 11s ease infinite;
+        -moz-animation: AnimationName 11s ease infinite;
+        animation: AnimationName 11s ease infinite;
+    }
+
+
+.nbr-gradient {
+    color: #ac82d6;
+}
+
+
+.align-center {
+    text-align: center;
+  }
+  
+  
+  .row {
+
+    margin: -20px 0;
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .row .col {
+    padding: 0 20px;
+    float: left;
+    box-sizing: border-box;
+  }
+  .row .col.x-50 {
+    width: 50%;
+  }
+  .row .col.x-100 {
+    width: 100%;
+  }
+  
+  .content-wrapper {
+    min-height: 100%;
+    position: relative;
+  }
+  
+  .get-in-touch {
+    max-width: 650px;
+    margin: 0 auto;
+    position: relative;
+
+  }
+  .get-in-touch .title {
+    text-align: center;
+    font-family: Raleway, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 36px;
+    line-height: 48px;
+    padding-bottom: 48px;
+    background: radial-gradient(circle at center center, #232526 0%, #787878 52%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .contact-form .form-field {
+    position: relative;
+    margin: 32px 0;
+  }
+  .contact-form .input-text {
+    display: block;
+    width: 100%;
+    height: 36px;
+    border-width: 0 0 2px 0;
+    border-color: #000;
+    font-family: 'Helvetica Now', sans-serif;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+  }
+  .contact-form .input-text:focus {
+    outline: none;
+  }
+  .contact-form .input-text:focus + .label, .contact-form .input-text.not-empty + .label {
+    transform: translateY(-24px);
+  }
+  .contact-form .label {
+    transform: translateY(-24px);
+    position: absolute;
+    left: 20px;
+    bottom: 11px;
+    font-family: 'Helvetica Now', sans-serif;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #888;
+    cursor: text;
+    transition: transform 0.2s ease-in-out;
+  }
+  .contact-form .submit-btn {
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    font-family: Raleway, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+  }
+
+
+  .header-3 {
+    font-size: 52px;
+    background: radial-gradient(circle at center center, #FF8008 0%, #FFC837 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+
+.bar {
+    width:1vw;
+    height:10vh;
+    transition: width 2s;
+    
+    background: linear-gradient(270deg, #ff512f, #dd2476);
+    background-size: 400% 400%;
+        
+    -webkit-animation: AnimationName 10s ease infinite;
+    -moz-animation: AnimationName 10s ease infinite;
+    animation: AnimationName 10s ease infinite;
+
+}
+
+
+
+/* Experience Table CSS */
+
+.centered {
+    margin: 0 auto;
+}
+
+.logos {
+  width: inherit;
+  z-index: 1;
+  position: relative;
+  top: -1px;
+  left: -1px;
+}
+
+
+/* BOARD STYLES */
+ #board-outer {
+    margin-left: auto;
+    margin-right: auto;
+    padding: auto;
+    /*max-height: 350px;*/
+    /*min-width: 90%;*/
+    /*background-color:none;*/
+    /*overflow: hidden;*/
+}
+#board {
+    width: 90hv/*354px*/;
+    /*height: 354px;*/
+    background-color:none;
+    border-spacing:0;
+}
+
+.emoji-check {
+  position: inherit;
+  width: 108px;
+}
+
+td {
+    background-color: #00d26a;
+    height: 116px;
+    width: 116px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 40pt;
+    border-collapse: collapse;
+    outline: 2px solid rgb(255, 255, 255);
+    text-transform: uppercase;
+    color: #ffffff;
+}
+.x {
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+}
+.o {
+    width: 100%;
+    height: 100%;
+    background-color: red;
+}
+
+@media (max-width: 360px) {
+  /* BOARD STYLES */
+  #board-outer {
+    width: 90hv;
+  }
+  #board {
+    width: 80hv;
+  }
+  td {
+    height: 25%;
+    width: 33%;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 3rem;
+    border-collapse: collapse;
+    border: 2px solid grey;
+    text-transform: uppercase;
+    color: #999999;
+}
+.x {
+    width: 50%;
+    background-color: blue;
+}
+.o {
+    width: 50%;
+    background-color: red;
+} 
+}
